@@ -25,7 +25,6 @@ int main(int argc, char *argv[])
   arraylist_concatenate(list, list2);
 
   arraylist_destroy(list);
-  arraylist_destroy(list2);
-
+  
   return 0;
 }
