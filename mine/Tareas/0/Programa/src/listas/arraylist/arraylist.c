@@ -123,6 +123,7 @@ void arraylist_concatenate(ArrayList* list1, ArrayList* list2)
       list1->array[list1->count + i] = list2->array[i];
     }
     list1->count += list2->count;
+    arraylist_destroy(list2);
     printArray(list1);
   }
 
